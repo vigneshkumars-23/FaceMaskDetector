@@ -56,14 +56,13 @@ model_saved=model.fit_generator(
         training_set,
         epochs=10,
         validation_data=test_set,
-
         )
 
 model.save('mymodel.h5',model_saved)
 
 #To test for individual images
 
-test_image=image.load_img('D:\\DIP PROJECT\\FaceMaskDetector-master\\test\\without_mask\\30.jpg',target_size=(150,150,3))
+test_image=image.load_img('..\\test\\without_mask\\30.jpg',target_size=(150,150,3))
 #test_image=image.load_img(r'C:\Users\Karan\Pictures\Camera Roll/21.jpg',
                 #  target_size=(150,150,3))
 test_image
